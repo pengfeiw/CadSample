@@ -8,8 +8,8 @@
     <ProjectGuid>{C3FC5568-1D5C-4869-BFFA-E2D07D860955}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AttachXref</RootNamespace>
-    <AssemblyName>AttachXref</AssemblyName>
+    <RootNamespace>ListEntities</RootNamespace>
+    <AssemblyName>ListEntities</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

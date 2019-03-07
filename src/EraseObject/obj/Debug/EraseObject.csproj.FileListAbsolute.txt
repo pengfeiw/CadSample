@@ -1,0 +1,5 @@
+D:\CADProgramming\src\EraseObject\obj\Debug\ResolveAssemblyReference.cache
+D:\CADProgramming\Debug\EraseObject.dll
+D:\CADProgramming\Debug\EraseObject.pdb
+D:\CADProgramming\src\EraseObject\obj\Debug\EraseObject.dll
+D:\CADProgramming\src\EraseObject\obj\Debug\EraseObject.pdb

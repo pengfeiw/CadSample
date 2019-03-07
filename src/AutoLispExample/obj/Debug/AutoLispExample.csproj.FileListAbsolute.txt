@@ -1,0 +1,7 @@
+D:\CADProgramming\Deubg\AutoLispExample.dll
+D:\CADProgramming\Deubg\AutoLispExample.pdb
+D:\CADProgramming\Debug\AutoLispExample.dll
+D:\CADProgramming\Debug\AutoLispExample.pdb
+D:\CADProgramming\src\AutoLispExample\obj\Debug\ResolveAssemblyReference.cache
+D:\CADProgramming\src\AutoLispExample\obj\Debug\AutoLispExample.dll
+D:\CADProgramming\src\AutoLispExample\obj\Debug\AutoLispExample.pdb

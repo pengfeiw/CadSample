@@ -1,0 +1,5 @@
+D:\CADProgramming\src\ControlDocumentWindow\bin\Debug\ControlDocumentWindow.dll
+D:\CADProgramming\src\ControlDocumentWindow\bin\Debug\ControlDocumentWindow.pdb
+D:\CADProgramming\src\ControlDocumentWindow\obj\Debug\ResolveAssemblyReference.cache
+D:\CADProgramming\src\ControlDocumentWindow\obj\Debug\ControlDocumentWindow.dll
+D:\CADProgramming\src\ControlDocumentWindow\obj\Debug\ControlDocumentWindow.pdb
