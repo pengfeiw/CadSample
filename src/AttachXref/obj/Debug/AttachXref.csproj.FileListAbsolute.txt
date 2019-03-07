@@ -1,5 +1,0 @@
-D:\CADProgramming\Debug\AttachXref.dll
-D:\CADProgramming\Debug\AttachXref.pdb
-D:\CADProgramming\src\AttachXref\obj\Debug\ResolveAssemblyReference.cache
-D:\CADProgramming\src\AttachXref\obj\Debug\AttachXref.dll
-D:\CADProgramming\src\AttachXref\obj\Debug\AttachXref.pdb

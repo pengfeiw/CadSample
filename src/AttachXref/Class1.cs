@@ -10,6 +10,9 @@ namespace AttachXref
 {
     public class Class1
     {
+        /// <summary>
+        /// 可以通过ObjecitId.ObjectClass判断某个Entity是block，还是Line...
+        /// </summary>
         [CommandMethod("ListEntities")]
         public static void ListEntities()
         {
@@ -23,7 +26,7 @@ namespace AttachXref
                 BlockTable acBlkTbl;
                 acBlkTbl = acTrans.GetObject(acCurDb.BlockTableId,
                                              OpenMode.ForRead) as BlockTable;
-
+                
                 // Open the Block table record Model space for read
                 BlockTableRecord acBlkTblRec;
                 acBlkTblRec = acTrans.GetObject(acBlkTbl[BlockTableRecord.ModelSpace],
@@ -46,7 +49,7 @@ namespace AttachXref
                     acDoc.Editor.WriteMessage("\n No objects found");
                 }
 
-                // Dispose of the transaction
+                acTrans.Commit();
             }
         }
     }
