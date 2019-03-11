@@ -1,0 +1,5 @@
+D:\CADProgramming\Debug\ZoomWindow.dll
+D:\CADProgramming\Debug\ZoomWindow.pdb
+D:\CADProgramming\src\ZoomWindow\obj\Debug\ResolveAssemblyReference.cache
+D:\CADProgramming\src\ZoomWindow\obj\Debug\ZoomWindow.dll
+D:\CADProgramming\src\ZoomWindow\obj\Debug\ZoomWindow.pdb

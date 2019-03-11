@@ -1,0 +1,5 @@
+D:\CADProgramming\src\CreateAndEraseView\obj\Debug\ResolveAssemblyReference.cache
+D:\CADProgramming\Debug\CreateAndEraseView.dll
+D:\CADProgramming\Debug\CreateAndEraseView.pdb
+D:\CADProgramming\src\CreateAndEraseView\obj\Debug\CreateAndEraseView.dll
+D:\CADProgramming\src\CreateAndEraseView\obj\Debug\CreateAndEraseView.pdb
