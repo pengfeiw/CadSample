@@ -1,0 +1,5 @@
+D:\CADProgramming\Debug\CreateAndOpenDrawing.dll
+D:\CADProgramming\Debug\CreateAndOpenDrawing.pdb
+D:\CADProgramming\src\CreateAndOpenDrawing\obj\Debug\ResolveAssemblyReference.cache
+D:\CADProgramming\src\CreateAndOpenDrawing\obj\Debug\CreateAndOpenDrawing.dll
+D:\CADProgramming\src\CreateAndOpenDrawing\obj\Debug\CreateAndOpenDrawing.pdb

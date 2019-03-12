@@ -1,0 +1,5 @@
+D:\CADProgramming\Debug\CustomizeApplicationMenu.dll
+D:\CADProgramming\Debug\CustomizeApplicationMenu.pdb
+D:\CADProgramming\src\CustomizeMenu\obj\Debug\ResolveAssemblyReference.cache
+D:\CADProgramming\src\CustomizeMenu\obj\Debug\CustomizeApplicationMenu.dll
+D:\CADProgramming\src\CustomizeMenu\obj\Debug\CustomizeApplicationMenu.pdb
