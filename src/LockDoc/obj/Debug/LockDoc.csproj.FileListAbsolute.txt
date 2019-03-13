@@ -1,0 +1,5 @@
+D:\CADProgramming\Debug\LockDoc.dll
+D:\CADProgramming\Debug\LockDoc.pdb
+D:\CADProgramming\src\LockDoc\obj\Debug\ResolveAssemblyReference.cache
+D:\CADProgramming\src\LockDoc\obj\Debug\LockDoc.dll
+D:\CADProgramming\src\LockDoc\obj\Debug\LockDoc.pdb
