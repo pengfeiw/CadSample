@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeGridAndSnap", "Change
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptForUserInput", "PromptForUserInput\PromptForUserInput.csproj", "{3F580124-E530-4355-AE9E-0D3174BDFB78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendCommandToCAD", "SendCommandToCAD\SendCommandToCAD.csproj", "{45368B3F-E1BE-418D-A511-018541E0FE82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAndCloseObject", "OpenAndCloseObject\OpenAndCloseObject.csproj", "{E152C830-8F39-48BF-9A76-FDF86F8936B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,14 @@ Global
 		{3F580124-E530-4355-AE9E-0D3174BDFB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F580124-E530-4355-AE9E-0D3174BDFB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F580124-E530-4355-AE9E-0D3174BDFB78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45368B3F-E1BE-418D-A511-018541E0FE82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45368B3F-E1BE-418D-A511-018541E0FE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45368B3F-E1BE-418D-A511-018541E0FE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45368B3F-E1BE-418D-A511-018541E0FE82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E152C830-8F39-48BF-9A76-FDF86F8936B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E152C830-8F39-48BF-9A76-FDF86F8936B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E152C830-8F39-48BF-9A76-FDF86F8936B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E152C830-8F39-48BF-9A76-FDF86F8936B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B3E69148-73A0-4A61-98CE-47A627AB4851}</ProjectGuid>
+    <ProjectGuid>{45368B3F-E1BE-418D-A511-018541E0FE82}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ZoomWindow</RootNamespace>
-    <AssemblyName>ZoomWindow</AssemblyName>
+    <RootNamespace>SendCommandToCAD</RootNamespace>
+    <AssemblyName>SendCommandToCAD</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

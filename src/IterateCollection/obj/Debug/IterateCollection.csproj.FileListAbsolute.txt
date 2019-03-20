@@ -3,3 +3,8 @@ D:\CADProgramming\Debug\IterateCollection.pdb
 D:\CADProgramming\src\IterateCollection\obj\Debug\ResolveAssemblyReference.cache
 D:\CADProgramming\src\IterateCollection\obj\Debug\IterateCollection.dll
 D:\CADProgramming\src\IterateCollection\obj\Debug\IterateCollection.pdb
+D:\program\CADProgramming\Debug\IterateCollection.dll
+D:\program\CADProgramming\Debug\IterateCollection.pdb
+D:\program\CADProgramming\src\IterateCollection\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\IterateCollection\obj\Debug\IterateCollection.dll
+D:\program\CADProgramming\src\IterateCollection\obj\Debug\IterateCollection.pdb

@@ -1,0 +1,5 @@
+D:\program\CADProgramming\Debug\OpenAndCloseObject.dll
+D:\program\CADProgramming\Debug\OpenAndCloseObject.pdb
+D:\program\CADProgramming\src\OpenAndCloseObject\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\OpenAndCloseObject\obj\Debug\OpenAndCloseObject.dll
+D:\program\CADProgramming\src\OpenAndCloseObject\obj\Debug\OpenAndCloseObject.pdb

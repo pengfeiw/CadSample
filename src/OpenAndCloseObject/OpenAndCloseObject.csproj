@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B3E69148-73A0-4A61-98CE-47A627AB4851}</ProjectGuid>
+    <ProjectGuid>{E152C830-8F39-48BF-9A76-FDF86F8936B5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ZoomWindow</RootNamespace>
-    <AssemblyName>ZoomWindow</AssemblyName>
+    <RootNamespace>OpenAndCloseObject</RootNamespace>
+    <AssemblyName>OpenAndCloseObject</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

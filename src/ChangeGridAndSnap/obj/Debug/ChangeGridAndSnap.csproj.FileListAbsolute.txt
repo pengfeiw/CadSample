@@ -3,3 +3,8 @@ D:\CADProgramming\Debug\ChangeGridAndSnap.pdb
 D:\CADProgramming\src\ChangeGridAndSnap\obj\Debug\ResolveAssemblyReference.cache
 D:\CADProgramming\src\ChangeGridAndSnap\obj\Debug\ChangeGridAndSnap.dll
 D:\CADProgramming\src\ChangeGridAndSnap\obj\Debug\ChangeGridAndSnap.pdb
+D:\program\CADProgramming\Debug\ChangeGridAndSnap.dll
+D:\program\CADProgramming\Debug\ChangeGridAndSnap.pdb
+D:\program\CADProgramming\src\ChangeGridAndSnap\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\ChangeGridAndSnap\obj\Debug\ChangeGridAndSnap.dll
+D:\program\CADProgramming\src\ChangeGridAndSnap\obj\Debug\ChangeGridAndSnap.pdb

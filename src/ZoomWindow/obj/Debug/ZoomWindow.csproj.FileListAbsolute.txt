@@ -3,3 +3,8 @@ D:\CADProgramming\Debug\ZoomWindow.pdb
 D:\CADProgramming\src\ZoomWindow\obj\Debug\ResolveAssemblyReference.cache
 D:\CADProgramming\src\ZoomWindow\obj\Debug\ZoomWindow.dll
 D:\CADProgramming\src\ZoomWindow\obj\Debug\ZoomWindow.pdb
+D:\program\CADProgramming\Debug\ZoomWindow.dll
+D:\program\CADProgramming\Debug\ZoomWindow.pdb
+D:\program\CADProgramming\src\ZoomWindow\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\ZoomWindow\obj\Debug\ZoomWindow.dll
+D:\program\CADProgramming\src\ZoomWindow\obj\Debug\ZoomWindow.pdb

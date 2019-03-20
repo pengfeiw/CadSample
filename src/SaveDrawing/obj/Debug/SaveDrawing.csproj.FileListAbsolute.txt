@@ -3,3 +3,8 @@ D:\CADProgramming\Debug\SaveDrawing.dll
 D:\CADProgramming\Debug\SaveDrawing.pdb
 D:\CADProgramming\src\SaveDrawing\obj\Debug\SaveDrawing.dll
 D:\CADProgramming\src\SaveDrawing\obj\Debug\SaveDrawing.pdb
+D:\program\CADProgramming\Debug\SaveDrawing.dll
+D:\program\CADProgramming\Debug\SaveDrawing.pdb
+D:\program\CADProgramming\src\SaveDrawing\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\SaveDrawing\obj\Debug\SaveDrawing.dll
+D:\program\CADProgramming\src\SaveDrawing\obj\Debug\SaveDrawing.pdb

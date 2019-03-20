@@ -3,3 +3,8 @@ D:\CADProgramming\Debug\AddMyLayer.pdb
 D:\CADProgramming\src\AddMyLayer\obj\Debug\ResolveAssemblyReference.cache
 D:\CADProgramming\src\AddMyLayer\obj\Debug\AddMyLayer.dll
 D:\CADProgramming\src\AddMyLayer\obj\Debug\AddMyLayer.pdb
+D:\program\CADProgramming\Debug\AddMyLayer.dll
+D:\program\CADProgramming\Debug\AddMyLayer.pdb
+D:\program\CADProgramming\src\AddMyLayer\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\AddMyLayer\obj\Debug\AddMyLayer.dll
+D:\program\CADProgramming\src\AddMyLayer\obj\Debug\AddMyLayer.pdb

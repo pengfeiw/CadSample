@@ -5,3 +5,8 @@ D:\CADProgramming\Debug\AutoLispExample.pdb
 D:\CADProgramming\src\AutoLispExample\obj\Debug\ResolveAssemblyReference.cache
 D:\CADProgramming\src\AutoLispExample\obj\Debug\AutoLispExample.dll
 D:\CADProgramming\src\AutoLispExample\obj\Debug\AutoLispExample.pdb
+D:\program\CADProgramming\Debug\AutoLispExample.dll
+D:\program\CADProgramming\Debug\AutoLispExample.pdb
+D:\program\CADProgramming\src\AutoLispExample\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\AutoLispExample\obj\Debug\AutoLispExample.dll
+D:\program\CADProgramming\src\AutoLispExample\obj\Debug\AutoLispExample.pdb

@@ -3,3 +3,8 @@ D:\CADProgramming\Debug\CreateAndEraseView.dll
 D:\CADProgramming\Debug\CreateAndEraseView.pdb
 D:\CADProgramming\src\CreateAndEraseView\obj\Debug\CreateAndEraseView.dll
 D:\CADProgramming\src\CreateAndEraseView\obj\Debug\CreateAndEraseView.pdb
+D:\program\CADProgramming\Debug\CreateAndEraseView.dll
+D:\program\CADProgramming\Debug\CreateAndEraseView.pdb
+D:\program\CADProgramming\src\CreateAndEraseView\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\CreateAndEraseView\obj\Debug\CreateAndEraseView.dll
+D:\program\CADProgramming\src\CreateAndEraseView\obj\Debug\CreateAndEraseView.pdb

@@ -3,3 +3,8 @@ D:\CADProgramming\Debug\CreateAndOpenDrawing.pdb
 D:\CADProgramming\src\CreateAndOpenDrawing\obj\Debug\ResolveAssemblyReference.cache
 D:\CADProgramming\src\CreateAndOpenDrawing\obj\Debug\CreateAndOpenDrawing.dll
 D:\CADProgramming\src\CreateAndOpenDrawing\obj\Debug\CreateAndOpenDrawing.pdb
+D:\program\CADProgramming\Debug\CreateAndOpenDrawing.dll
+D:\program\CADProgramming\Debug\CreateAndOpenDrawing.pdb
+D:\program\CADProgramming\src\CreateAndOpenDrawing\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\CreateAndOpenDrawing\obj\Debug\CreateAndOpenDrawing.dll
+D:\program\CADProgramming\src\CreateAndOpenDrawing\obj\Debug\CreateAndOpenDrawing.pdb

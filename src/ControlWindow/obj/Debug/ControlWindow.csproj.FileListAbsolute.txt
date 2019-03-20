@@ -3,3 +3,8 @@ D:\CADProgramming\Debug\ControlWindow.pdb
 D:\CADProgramming\src\ControlWindow\obj\Debug\ResolveAssemblyReference.cache
 D:\CADProgramming\src\ControlWindow\obj\Debug\ControlWindow.dll
 D:\CADProgramming\src\ControlWindow\obj\Debug\ControlWindow.pdb
+D:\program\CADProgramming\Debug\ControlWindow.dll
+D:\program\CADProgramming\Debug\ControlWindow.pdb
+D:\program\CADProgramming\src\ControlWindow\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\ControlWindow\obj\Debug\ControlWindow.dll
+D:\program\CADProgramming\src\ControlWindow\obj\Debug\ControlWindow.pdb

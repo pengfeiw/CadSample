@@ -1,0 +1,5 @@
+D:\program\CADProgramming\Debug\SendCommandToCAD.dll
+D:\program\CADProgramming\Debug\SendCommandToCAD.pdb
+D:\program\CADProgramming\src\SendCommandToCAD\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\SendCommandToCAD\obj\Debug\SendCommandToCAD.dll
+D:\program\CADProgramming\src\SendCommandToCAD\obj\Debug\SendCommandToCAD.pdb
