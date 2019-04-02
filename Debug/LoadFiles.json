@@ -1,0 +1,9 @@
+{
+	"AddMyLayer": "AddMylayer ",
+	"AutoLispExample": "DisplayFullName ",
+	"ChangeGridAndSnap": "ChangeGridAndSnap ",
+	"ControlDocumentWindow": "ChangeDrawWindow ",
+	"ControlWindow": "ChangeWindowPosition ",
+	"CreateAndEraseView": "CreateNamedView ",
+	"CreateAndOpenDrawing": "CreateDrawing "
+}

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{299BE865-7B48-49B3-AB12-49C1522DF27D}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -33,12 +33,12 @@
   <ItemGroup>
     <Reference Include="acdbmgd, Version=18.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\software\CAD2010\acdbmgd.dll</HintPath>
+      <HintPath>..\..\..\..\software\CAD2010\acdbmgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acmgd, Version=18.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\software\CAD2010\acmgd.dll</HintPath>
+      <HintPath>..\..\..\..\software\CAD2010\acmgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PresentationCore">

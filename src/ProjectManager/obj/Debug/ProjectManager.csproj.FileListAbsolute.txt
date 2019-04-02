@@ -1,0 +1,5 @@
+D:\program\CADProgramming\Debug\ProjectManager.dll
+D:\program\CADProgramming\Debug\ProjectManager.pdb
+D:\program\CADProgramming\src\ProjectManager\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\ProjectManager\obj\Debug\ProjectManager.dll
+D:\program\CADProgramming\src\ProjectManager\obj\Debug\ProjectManager.pdb

@@ -3,8 +3,8 @@ D:\CADProgramming\Debug\PromptForUserInput.pdb
 D:\CADProgramming\src\PromptForUserInput\obj\Debug\ResolveAssemblyReference.cache
 D:\CADProgramming\src\PromptForUserInput\obj\Debug\PromptForUserInput.dll
 D:\CADProgramming\src\PromptForUserInput\obj\Debug\PromptForUserInput.pdb
+D:\program\CADProgramming\Debug\PromptForUserInput.dll
+D:\program\CADProgramming\Debug\PromptForUserInput.pdb
 D:\program\CADProgramming\src\PromptForUserInput\obj\Debug\ResolveAssemblyReference.cache
 D:\program\CADProgramming\src\PromptForUserInput\obj\Debug\PromptForUserInput.dll
 D:\program\CADProgramming\src\PromptForUserInput\obj\Debug\PromptForUserInput.pdb
-D:\program\CADProgramming\Debug\PromptForUserInput.dll
-D:\program\CADProgramming\Debug\PromptForUserInput.pdb
