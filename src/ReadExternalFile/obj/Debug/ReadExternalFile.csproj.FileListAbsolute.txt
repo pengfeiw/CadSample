@@ -1,0 +1,5 @@
+D:\program\CADProgramming\Debug\ReadExternalFile.dll
+D:\program\CADProgramming\Debug\ReadExternalFile.pdb
+D:\program\CADProgramming\src\ReadExternalFile\obj\Debug\ResolveAssemblyReference.cache
+D:\program\CADProgramming\src\ReadExternalFile\obj\Debug\ReadExternalFile.dll
+D:\program\CADProgramming\src\ReadExternalFile\obj\Debug\ReadExternalFile.pdb

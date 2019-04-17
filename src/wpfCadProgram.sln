@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAndCloseObject", "OpenA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManager", "ProjectManager\ProjectManager.csproj", "{63047568-1891-408D-937F-733B10A4FCD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchAutoCAD", "LaunchAutoCAD\LaunchAutoCAD.csproj", "{FEE213EB-3E9A-448D-A83C-69846674930D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadExternalFile", "ReadExternalFile\ReadExternalFile.csproj", "{FDBF413A-454C-4361-A0D1-2DFF867A734D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +119,14 @@ Global
 		{63047568-1891-408D-937F-733B10A4FCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63047568-1891-408D-937F-733B10A4FCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63047568-1891-408D-937F-733B10A4FCD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE213EB-3E9A-448D-A83C-69846674930D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE213EB-3E9A-448D-A83C-69846674930D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE213EB-3E9A-448D-A83C-69846674930D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE213EB-3E9A-448D-A83C-69846674930D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDBF413A-454C-4361-A0D1-2DFF867A734D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDBF413A-454C-4361-A0D1-2DFF867A734D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDBF413A-454C-4361-A0D1-2DFF867A734D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDBF413A-454C-4361-A0D1-2DFF867A734D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
