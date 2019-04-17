@@ -40,11 +40,12 @@ namespace ReadExternalFile
         }
 
         /// <summary>
+        /// This version is a bit problematic, DBText can not display in active document right now and it's often crash when use command "i" to insert newly created block.
         /// Read dwg and dxf file into a memory, than  make all entities of ModelSpace into a block.
         /// </summary>
         /// <param name="cadPath">The file is readed into memory which should be a .dxf file or .dwg file</param>
         /// <returns></returns>
-        public static ObjectId createBlockFromFile(string cadPath)
+        public static ObjectId createBlockFromFile_ErrorVersion(string cadPath)
         {
             if (File.Exists(cadPath))
             {
@@ -122,6 +123,114 @@ namespace ReadExternalFile
                         acTrans.Commit();
                         //scDb.Dispose();
                         return idForInsert;
+                    }
+                }
+            }
+            else
+            {
+                return new ObjectId();
+            }
+        }
+
+        /// <summary>
+        /// This version is a correct version
+        /// Read dwg and dxf file into a memory, than  make all entities of ModelSpace into a block.
+        /// </summary>
+        /// <param name="cadPath">The file is readed into memory which should be a .dxf file or .dwg file</param>
+        /// <returns></returns>
+        public static ObjectId createBlockFromFile(string cadPath)
+        {
+            if (File.Exists(cadPath))
+            {
+                Document acDoc = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument;
+                Database acDb = acDoc.Database;
+                Database scDb = new Database(false, true);
+                using (scDb)
+                {
+                    //Database scDb = new Database(true, true);
+                    string fileExtension = System.IO.Path.GetExtension(cadPath);
+                    string fileName = System.IO.Path.GetFileNameWithoutExtension(cadPath);  //use fileName as blockName.
+                    if (fileExtension == ".dxf")
+                        scDb.DxfIn(cadPath, null);
+                    else if (fileExtension == ".dwg")
+                        scDb.ReadDwgFile(cadPath, FileOpenMode.OpenForReadAndReadShare, false, null);
+                    else
+                    {
+                        return new ObjectId();
+                    }
+                    using (Transaction acTrans = acDb.TransactionManager.StartTransaction())
+                    {
+                        string blockName = fileName;
+
+                        BlockTable acBlockTable = acTrans.GetObject(acDb.BlockTableId, OpenMode.ForRead) as BlockTable;
+
+                        ObjectId insertId = ObjectId.Null;
+
+                        ObjectIdCollection idsForInsert = new ObjectIdCollection();
+                        using (Transaction scTrans = scDb.TransactionManager.StartTransaction())
+                        {
+                            BlockTable scBlockTable = scTrans.GetObject(scDb.BlockTableId, OpenMode.ForRead) as BlockTable;
+                            BlockTableRecord scModelSpace = scTrans.GetObject(scBlockTable[BlockTableRecord.ModelSpace], OpenMode.ForRead) as BlockTableRecord;
+
+                            //prevent block name repetition
+                            int nameSuffix = 0;
+                            while (acBlockTable.Has(blockName) || scBlockTable.Has(blockName))
+                            {
+                                blockName = fileName + nameSuffix.ToString();
+                                nameSuffix++;
+                            }
+
+                            BlockTableRecord btrForInsert_Sc = new BlockTableRecord();  //在源文件中创建一个临时block,该block由模型空间中所有entity组成。
+                            btrForInsert_Sc.Name = blockName;
+                            scBlockTable.UpgradeOpen();
+                            ObjectId idForInsert_Sc = scBlockTable.Add(btrForInsert_Sc);
+                            scTrans.AddNewlyCreatedDBObject(btrForInsert_Sc, true);
+                            scBlockTable.DowngradeOpen();
+
+                            foreach (ObjectId id in scModelSpace)
+                            {
+                                Entity ent = scTrans.GetObject(id, OpenMode.ForRead) as Entity;
+                                if (ent != null)
+                                {
+                                    Entity newEnt = ent.Clone() as Entity;  //浅克隆
+                                    if (newEnt is BlockReference)
+                                    {
+                                        BlockReference blref = newEnt as BlockReference;
+                                        ObjectIdCollection ids = getAllEntityOfBlockReference(blref, scTrans);
+                                        foreach (ObjectId id2 in ids)
+                                        {
+                                            Entity ent2 = scTrans.GetObject(id2, OpenMode.ForRead) as Entity;
+                                            Entity ent2New = ent2.Clone() as Entity;  //因为之前的ent是浅克隆，所以这里需要再克隆下，防止重复。
+                                            btrForInsert_Sc.AppendEntity(ent2New);
+                                            scTrans.AddNewlyCreatedDBObject(ent2New, true);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        btrForInsert_Sc.AppendEntity(newEnt);
+                                        scTrans.AddNewlyCreatedDBObject(newEnt, true);
+                                    }
+                                }
+                            }
+
+                            idsForInsert.Add(idForInsert_Sc);
+
+                            scModelSpace.Dispose();
+                            scTrans.Commit();
+                        }
+
+                        //克隆新建的块。
+                        ObjectId resId = ObjectId.Null;
+                        if (idsForInsert.Count != 0)
+                        {
+                            IdMapping iMap = new IdMapping();
+                            acDb.WblockCloneObjects(idsForInsert, acDb.BlockTableId, iMap, DuplicateRecordCloning.Ignore, false);
+
+                            IdPair pair1 = iMap[idsForInsert[0]];
+                            resId = pair1.Value;
+                        }
+                        acTrans.Commit();
+                        return resId;
                     }
                 }
             }
