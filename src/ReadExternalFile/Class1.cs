@@ -96,9 +96,24 @@ namespace ReadExternalFile
                                 Entity ent = scTrans.GetObject(id, OpenMode.ForRead) as Entity;
                                 if (ent != null)
                                 {
-                                    Entity newEnt = ent.Clone() as Entity;
-                                    btrForInsert.AppendEntity(newEnt);
-                                    acTrans.AddNewlyCreatedDBObject(newEnt, true);
+                                    Entity newEnt = ent.Clone() as Entity;  //浅克隆
+                                    if (newEnt is BlockReference)
+                                    {
+                                        BlockReference blref = newEnt as BlockReference;
+                                        ObjectIdCollection ids = getAllEntityOfBlockReference(blref, scTrans);
+                                        foreach (ObjectId id2 in ids)
+                                        {
+                                            Entity ent2 = scTrans.GetObject(id2, OpenMode.ForRead) as Entity;
+                                            Entity ent2New = ent2.Clone() as Entity;  //因为之前的ent是浅克隆，所以这里需要再克隆下，防止重复。
+                                            btrForInsert.AppendEntity(ent2New);
+                                            acTrans.AddNewlyCreatedDBObject(ent2New, true);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        btrForInsert.AppendEntity(newEnt);
+                                        acTrans.AddNewlyCreatedDBObject(newEnt, true);
+                                    }
                                 }
                             }
                             scModelSpace.Dispose();
@@ -114,6 +129,35 @@ namespace ReadExternalFile
             {
                 return new ObjectId();
             }
+        }
+
+        private static ObjectIdCollection getAllEntityOfBlockReference(BlockReference blockReference, Transaction trans)
+        {
+            ObjectIdCollection idCollection = new ObjectIdCollection();
+            BlockTableRecord btr = trans.GetObject(blockReference.BlockTableRecord, OpenMode.ForRead) as BlockTableRecord;
+            foreach (ObjectId id in btr)
+            {
+                Entity ent = trans.GetObject(id, OpenMode.ForRead) as Entity;
+                if (ent != null)
+                {
+                    if (ent is BlockReference)
+                    {
+                        BlockReference blref = ent as BlockReference;
+                        ObjectIdCollection blrefIdCollection = getAllEntityOfBlockReference(blref, trans);
+
+                        foreach (ObjectId id2 in blrefIdCollection)
+                        {
+                            idCollection.Add(id2);
+                        }
+                    }
+                    else
+                    {
+                        idCollection.Add(id);
+                    }
+                }
+            }
+
+            return idCollection;
         }
 
         public static void insertBlock(ObjectId id, Point3d insertPoint)
