@@ -193,23 +193,28 @@ namespace ReadExternalFile
                                 if (ent != null)
                                 {
                                     Entity newEnt = ent.Clone() as Entity;  //浅克隆
-                                    if (newEnt is BlockReference)
-                                    {
-                                        BlockReference blref = newEnt as BlockReference;
-                                        ObjectIdCollection ids = getAllEntityOfBlockReference(blref, scTrans);
-                                        foreach (ObjectId id2 in ids)
-                                        {
-                                            Entity ent2 = scTrans.GetObject(id2, OpenMode.ForRead) as Entity;
-                                            Entity ent2New = ent2.Clone() as Entity;  //因为之前的ent是浅克隆，所以这里需要再克隆下，防止重复。
-                                            btrForInsert_Sc.AppendEntity(ent2New);
-                                            scTrans.AddNewlyCreatedDBObject(ent2New, true);
-                                        }
-                                    }
-                                    else
-                                    {
-                                        btrForInsert_Sc.AppendEntity(newEnt);
-                                        scTrans.AddNewlyCreatedDBObject(newEnt, true);
-                                    }
+                                    #region 后面会进行深克隆，不需要进一步分析, 而且这种写法有点问题，如果出现块中块的情况。
+                                    //if (newEnt is BlockReference)
+                                    //{
+                                    //    BlockReference blref = newEnt as BlockReference;
+                                    //    ObjectIdCollection ids = getAllEntityOfBlockReference(blref, scTrans);
+                                    //    foreach (ObjectId id2 in ids)
+                                    //    {
+                                    //        Entity ent2 = scTrans.GetObject(id2, OpenMode.ForRead) as Entity;
+                                    //        Entity ent2New = ent2.Clone() as Entity;  //因为之前的ent是浅克隆，所以这里需要再克隆下，防止重复。
+                                    //        btrForInsert_Sc.AppendEntity(ent2New);
+                                    //        scTrans.AddNewlyCreatedDBObject(ent2New, true);
+                                    //    }
+                                    //}
+                                    //else
+                                    //{
+                                    //    btrForInsert_Sc.AppendEntity(newEnt);
+                                    //    scTrans.AddNewlyCreatedDBObject(newEnt, true);
+                                    //}
+                                    #endregion
+
+                                    btrForInsert_Sc.AppendEntity(newEnt);
+                                    scTrans.AddNewlyCreatedDBObject(newEnt, true);
                                 }
                             }
 
